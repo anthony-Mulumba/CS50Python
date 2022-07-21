@@ -1,13 +1,13 @@
 def main():
-    x = get_int_pass()
+    x = get_int_pass("What is the number? ")
     print(f"You have entered: {x}")
 
 
 #Here we don't prompt to the user the error faced but ordered him to enter again a number
-def get_int_pass():
+def get_int_pass(prompt):
     while True:
         try:
-            return int(input("Enter the number: "))
+            return int(input(prompt))
         except ValueError:
             pass
 
