@@ -1,6 +1,6 @@
 def main():
     #name = input("What is your name? ").strip().title()
-    hello(name)
+    hello()
 
 def hello(to="world"):
     print(f"hello {to}")
